@@ -4854,6 +4854,13 @@ file {
       type_name: ".docker.swarmkit.v1.ContainerSpec.Isolation"
       json_name: "isolation"
     }
+	field {
+      name: "privileged"
+      number: 26
+      label: LABEL_OPTIONAL
+      type: TYPE_BOOL
+      json_name: "privileged"
+    }
     field {
       name: "pidsLimit"
       number: 25

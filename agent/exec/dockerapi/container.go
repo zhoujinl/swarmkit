@@ -209,6 +209,7 @@ func (c *containerConfig) hostConfig() *enginecontainer.HostConfig {
 		PortBindings: c.portBindings(),
 		Init:         c.init(),
 		Isolation:    c.isolation(),
+		Privileged:   c.spec().Privileged,
 	}
 
 	// The format of extra hosts on swarmkit is specified in:
